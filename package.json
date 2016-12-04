@@ -1,0 +1,25 @@
+{
+  "name": "language-mal",
+  "version": "0.1.0",
+  "description": "MAL support in Atom",
+  "keywords": [
+    "ijvm",
+    "mal",
+    "mic-1",
+    "jvm",
+    "micro",
+    "assembly"
+  ],
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Specro/language-mal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Specro/language-mal/issues"
+  },
+  "license": "MIT"
+}

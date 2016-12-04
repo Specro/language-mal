@@ -1,0 +1,39 @@
+'scopeName': 'source.mal'
+'name': 'MAL'
+'fileTypes': ['mal']
+
+'patterns': [
+  {
+    'name': 'comment.line.double-slash.mal'
+    'match': '\/\/.*'
+  }
+  {
+    'name': 'storage.register.mal'
+    'match': '(?i)(?:mar|mdr|mbr|mbru|pc|sp|lv|cpp|tos|opc|h|z|n)\\b'
+  }
+  {
+    'name': 'constant.numeric.mal'
+    'match': '(?i)\\b(\\d+|0x[a-z\\d]+)\\b'
+  }
+	{
+    'name': 'keyword.control.mal'
+    'match': '(?:if|else|goto|fetch|wr|rd)\\b'
+  }
+  {
+    'name': 'keyword.other.mal'
+    'match': '(?:\.label|\.default)\\b'
+  }
+  {
+    'name': 'entity.name.tag'
+    'match': '(\\w+:)'
+  }
+  {
+    'name': 'meta.function.ijvm'
+    'captures':
+      '1':
+        'name': 'keyword.other.ijvm'
+      '2':
+        'name': 'entity.name.function.ijvm'
+    'match': '(\\.method)\\s+(\\w+)\\s*(.*)'
+  }
+]
